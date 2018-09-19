@@ -38,7 +38,7 @@ public class MergeArrays {
 			D[k]=Integer.MAX_VALUE;
 		}
 		//System.out.println("Looping through");
-		
+		long startTime = System.currentTimeMillis();
 		//looping through C to fill it
 		for(int i=0;i<C.length;i++) {
 
@@ -69,13 +69,14 @@ public class MergeArrays {
 				}
 			}		
 		}
-		
+		long endTime = System.currentTimeMillis();
 		//print out new array C
 		System.out.println("New Array is ");
 		for(int j=0;j<C.length;j++) {
 			System.out.print(C[j]+" : ");
 		}
-		
+		System.out.println();
+		System.out.println("Time taken ms "+(endTime-startTime));
 	}
 		
 		
